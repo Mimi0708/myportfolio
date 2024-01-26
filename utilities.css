@@ -1,0 +1,417 @@
+.flex {
+    display: flex;
+  }
+  .items-center {
+    align-items: center;
+  }
+  
+  .btn--primary {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+  .btn--primary:hover {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+    border-style: dotted;
+    font-weight: 900;
+  }
+  .btn-secondary:hover {
+    background: transparent;
+    color: var(--primary);
+    font-weight: 900;
+  }
+  .flex1 {
+    flex: 1;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  
+  #portfolio .portfolio-item {
+    padding-top: 100px;
+    right: 0;
+    border-radius: 10px;
+    margin: 0 0 15px;
+    border-color: var(--light);
+  }
+  
+  #portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  
+  #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: var(--dark);
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  
+  #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 0;
+  }
+  
+  #portfolio
+    .portfolio-item
+    .portfolio-link
+    .portfolio-hover
+    .portfolio-hover-content {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  #portfolio
+    .portfolio-item
+    .portfolio-link
+    .portfolio-hover
+    .portfolio-hover-content
+    i {
+    margin-top: -12px;
+  }
+  
+  #portfolio
+    .portfolio-item
+    .portfolio-link
+    .portfolio-hover
+    .portfolio-hover-content
+    h3,
+  #portfolio
+    .portfolio-item
+    .portfolio-link
+    .portfolio-hover
+    .portfolio-hover-content
+    h4 {
+    margin: 0;
+  }
+  
+  #portfolio .portfolio-item .portfolio-caption {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 500px;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  #portfolio * {
+    z-index: 2;
+  }
+  
+  @media (min-width: 767px) {
+    #portfolio .portfolio-item {
+      margin: 0 0 30px;
+    }
+  }
+  .cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 0.3rem;
+    background-color: #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-this:hover ~ .cursor {
+    transform: translate(-50%, -50%) scale(8);
+  }
+  
+  @media (min-width: 900px) {
+    nav {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    nav {
+      top: 30%;
+    }
+  
+    .hover-this {
+      width: 100%;
+      padding: 20px 0;
+      display: inline-block;
+    }
+  }
+  
+  footer {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark);
+    padding-bottom: 100px;
+  }
+  
+  #contact {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 60px "Oswald", sans-serif;
+    color: #1a1818;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+  }
+  
+  /* Left contact page */
+  .form-horizontal {
+    /*float: left;*/
+    max-width: 400px;
+    font-family: "Lato";
+    font-weight: 400;
+  }
+  
+  .form-control,
+  textarea {
+    max-width: 400px;
+    background-color: #dab5dd;
+    color: #60276b;
+    letter-spacing: 2px;
+  }
+  
+  .send-button {
+    margin-top: 15px;
+    height: 50px;
+    width: 400px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(26, 24, 26);
+  }
+  
+  .alt-send-button {
+    width: 400px;
+    height: 34px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .send-text {
+    display: block;
+    margin-top: 10px;
+    font: 700 12px "Lato", sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+  }
+  
+  /* Begin Right Contact Page */
+  .direct-contact-container {
+    max-width: 400px;
+  }
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #0a0a0a;
+  }
+  
+  .contact-text {
+    font: 300 18px "Lato", sans-serif;
+    letter-spacing: 1.9px;
+    color: #070707;
+  }
+  
+  .place {
+    margin-left: 62px;
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 53px;
+  }
+  
+  .contact-text a {
+    color: #131212;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .social-media-list li a {
+    color: #fff;
+  }
+  
+  .social-media-list li {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #130f0f;
+    background-color: rgb(20, 19, 19);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .social-media-list li:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #161515;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .social-media-list li:hover {
+    background-color: #0c0c0c;
+  }
+  
+  .social-media-list li:hover:after {
+    opacity: 1;
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+  }
+  
+  .social-media-list li:hover a {
+    color: #8f338f;
+  }
+  
+  .copyright {
+    font: 200 14px "Oswald", sans-serif;
+    color: #0a0909;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  hr {
+    border-color: rgba(129, 120, 128, 0.6);
+  }
+  
+  @media screen and (max-width: 850px) {
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .direct-contact-container,
+    .form-horizontal {
+      margin: 0 auto;
+    }
+  
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 300px;
+    }
+    .social-media-list li {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+    }
+    .social-media-list li:after {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 569px) {
+    .direct-contact-container,
+    .form-wrapper {
+      float: none;
+      margin: 0 auto;
+    }
+    .form-control,
+    textarea {
+      margin: 0 auto;
+    }
+  
+    .name,
+    .email,
+    textarea {
+      width: 280px;
+    }
+  
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 280px;
+    }
+  
+    .social-media-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .social-media-list li {
+      display: inline-block;
+      margin-right: 10px; /* Adjust spacing between icons */
+    }
+  
+    .social-media-list li a {
+      display: block;
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      font-size: 2rem;
+      text-align: center;
+      color: #fff;
+      background-color: #e4d7d7; /* Add a background color for better visibility */
+      border-radius: 50%; /* Make the icons circular */
+    }
+  
+    .social-media-list li a:hover {
+      background-color: #e9d9d9; /* Add a darker background color on hover */
+    }
+  }
+  
+  @media screen and (max-width: 410px) {
+    .send-button {
+      width: 99%;
+    }
+  }
